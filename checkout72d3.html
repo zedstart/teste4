@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Página de pagamento - Uber</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*
+### Main Layout ###
+*/
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyThin.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyThin.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyThin.svg#GilroyThin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyUltraLight.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyUltraLight.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyUltraLight.svg#GilroyUltraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyLight.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyLight.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyLight.svg#GilroyLight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyRegular.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyRegular.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyRegular.svg#GilroyRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyMedium.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyMedium.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyMedium.svg#GilroyMedium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroySemiBold.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroySemiBold.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroySemiBold.svg#GilroySemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyBold.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyBold.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyBold.svg#GilroyBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyExtraBold.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyExtraBold.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://cdn.ebanx.com/fonts/gilroy/GilroyBlack.woff2') format('woff2'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyBlack.woff') format('woff'),
+	url('https://cdn.ebanx.com/fonts/gilroy/GilroyBlack.svg#GilroyBlack') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: inherit;
+}
+
+html {
+	color: rgb(102, 102, 102);
+	background-color: rgb(244, 244, 246);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	touch-action: manipulation;
+	font-family: "Open Sans", OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+body {
+	margin: 0;
+	height:100%;
+	display: -webkit-box;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	padding: 0;
+	min-height: 100%;
+}
+
+.pix-logo-full__PixIcon {
+	height: 53px;
+	width: 148px;
+}
+
+.pix-logo-full__PixIconWrapper {
+	margin: 21px 0;
+}
+
+.pix-logo-full__Root {
+	height: 100%;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.pix-code__PixMessage {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 21px;
+	margin-top: 0px;
+}
+
+.voucher {
+	min-height: 100vh;
+	height: 100%;
+}
+
+.voucher-content {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-bottom: 1px solid rgb(227, 227, 232);
+	margin: auto;
+	max-width: 425px;
+	padding-top: 1em;
+}
+
+.voucher-content > * {
+	width: calc(100% - 2em);
+	margin: 0.7em auto;
+}
+
+/*
+### Blocks ###
+*/
+.highlight-box {
+	background-color: rgba(120, 120, 140, 0.05);
+	border-color: transparent;
+	border-style: solid;
+	border-width: 0.1em;
+	font-family: Gilroy, "Open Sans", OpenSans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: flex;
+	padding: 6px;
+	border-radius: 5px;
+	flex-direction: column;
+}
+
+.highlight-box-simple {
+	background-color: rgba(120, 120, 140, 0.05);
+	border-color: transparent;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0.1em;
+}
+
+.highlight-box-cell {
+	display: flex;
+	flex-flow: column;
+	-webkit-box-align: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(117, 117, 138, 0.15);
+	padding: 12px;
+}
+
+.last-box-cell {
+	border-right: none !important;
+	border-bottom: none !important;
+}
+
+.highlight-box-cell-text-title {
+	font-size: 1.1em;
+	opacity: 0.8;
+}
+
+.highlight-box-cell-text-valor{
+	font-size: 1.75em;
+	display: flex;
+	vertical-align: text-bottom;
+	-webkit-box-align: baseline;
+	align-items: baseline;
+	white-space: nowrap;
+}
+
+.qr-code__Code {
+	background-color: rgba(120, 120, 140, 0.05);
+	border-color: transparent;
+	border-style: solid;
+	border-width: 0.1em;
+	display: flex;
+	flex-direction: column;
+	padding: 6px;
+	border-radius: 5px;
+	white-space: nowrap;
+	overflow-y: hidden;
+}
+
+.button-copy {
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: "Open Sans", OpenSans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 0.08em;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	padding: 1em 0.5em;
+	transition: filter 200ms cubic-bezier(0, 0, 0.2, 1) 0s;
+	filter: brightness(115%);
+	height: 68px;
+	display: block;
+	width: 100%;
+	background: rgb(0, 0, 0);
+}
+
+.btn-success {
+	background-color: hsla(119,32%,50%,1);
+}
+
+.button__ButtonLink {
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: "Open Sans", OpenSans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 0.08em;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	padding: 1em 0.5em;
+	transition: filter 200ms cubic-bezier(0, 0, 0.2, 1) 0s;
+	filter: brightness(115%);
+	display: block;
+	background: rgb(0, 0, 0);
+	width: calc(100% - 2em);
+}
+
+.separator__Separator {
+	width: 100%;
+	height: 1em;
+	background-position-y: 50%;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 1.4em;
+}
+
+.section-title__SectionTitle {
+	font-family: Gilroy, "Open Sans", OpenSans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+}
+
+.tips-box__TipIcon {
+	flex: 0 0 auto;
+	height: 100%;
+}
+
+.tips-box__Tip {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	margin: 15px 0;
+}
+
+.tips-box__TipText {
+	color: rgb(78, 87, 101);
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.padding__Padding {
+	padding: 1em;
+}
+
+.separator__Line {
+	width: 100%;
+	height: 1px;
+	background-position-y: 50%;
+	background-color: rgb(214, 214, 220);
+}
+
+.padding__FooterPadding {
+	padding: 0.5em calc(50% - 6em);
+}
+
+.margin__FooterMargin {
+	margin: 2em 1em;
+}
+
+.page__Footer {
+	color: rgba(47, 47, 55, 0.6);
+	text-align: center;
+}
+
+.page__EbanxLogo {
+	font-size: 1.5em;
+	height: 1em;
+	vertical-align: middle;
+}
+
+.final-payment-page__IconWrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.messages-content__MessagesHeader {
+	text-align: center;
+	font-family: Gilroy, "Open Sans", OpenSans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.messages-content__MessagesList {
+	text-align: center;
+	font-family: "Open Sans", OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(47, 47, 55, 0.8);
+	list-style: none;
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 16px;
+}
+
+@media (min-width: 321px) {
+	.highlight-box {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 321px) {
+	.highlight-box-cell {
+		-webkit-box-flex: 1;
+		flex-grow: 1;
+		flex-basis: 0px;
+		border-right: 1px solid rgba(117, 117, 138, 0.15);
+		border-bottom: none;
+	}
+}</style>
+	</head>
+
+<body>
+
+<article class="voucher">
+	<main class="voucher-content">
+			<style>
+		.dot-dot-dots {
+			width: 100%;
+			height: 0.2em;
+			background-position-y: 50%;
+			background-repeat: repeat-x;
+			background-image: url("https://customer-local-latam.ebanx.com/img/uber/dotdotdot.svg");
+		}
+	</style>
+	<div class="highlight-box">
+		<div class="highlight-box-cell">
+			<div class="highlight-box-cell-text-title">
+				Valor:
+			</div>
+			<div class="highlight-box-cell-text-valor">
+				R$ 21.91
+			</div>
+		</div>
+		<div class="highlight-box-cell last-box-cell">
+			<div class="highlight-box-cell-text-title">
+				Pague até:
+			</div>
+			<div class="highlight-box-cell-text-valor">
+				5 minutos
+			</div>
+		</div>
+	</div>
+
+	<section>
+    <div class="dot-dot-dots"></div>
+    <div class="pix-logo-full__Root">
+        <div class="pix-logo-full__PixIconWrapper">
+            <img class="pix-logo-full__PixIcon" src="https://customer-local-latam.ebanx.com/img/payments/pix.svg" alt="pix icon" />
+        </div>
+    </div>
+
+    <p class="pix-code__PixMessage">Copie o código Pix abaixo e cole em seu app de pagamento para finalizar a compra.</p>
+
+    <div class="qr-code__Code" id="code">00020126820014br.gov.bcb.pix2560pix.s3bank.com/qr/v3/at/de9d7114-9eaa-4eb9-9cdd-83ddf5c61aa45204000053039865802BR5925QUANTUM_TECH_SERVICOS_DIG6012PORTO_ALEGRE62070503***630462E9</div>
+
+    <div class="separator__Separator"></div>
+    <button title="" type="button" class="button btn copy button-copy no_print" data-clipboard-text="00020101021226740014br.gov.bcb.pix2552pix.ebanx.com/qr/v2/AF75CC2E673FECF5340FDA6C222475315204000053039865802BR5925Uber do Brasil Tecnologia6009SAO PAULO62070503***63040D17">Copiar código pix</button>
+    <div class="separator__Separator"></div>
+
+    <div class="dot-dot-dots"></div>
+</section>
+
+<script>
+    // Seleciona o botão "Copiar código pix"
+    document.querySelector('.button-copy').addEventListener('click', function() {
+        // Obtém o texto que deve ser copiado
+        const textToCopy = this.getAttribute('data-clipboard-text');
+
+        // Cria um elemento de input temporário para copiar o texto
+        const tempInput = document.createElement('input');
+        tempInput.value = textToCopy;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+
+        // Altera o texto do botão para "Copiado"
+        this.innerText = 'Copiado';
+
+        // (Opcional) Retorna o texto do botão ao normal após 2 segundos
+        setTimeout(() => {
+            this.innerText = 'Copiar código pix';
+        }, 2000);
+    });
+</script>
+
+
+	<div class="highlight-box-simple">
+		<div value="1em" class="padding__Padding">
+			<h2 class="section-title__SectionTitle">Como pagar?</h2>
+			<div class="tips-box__Tip">
+				<img src="https://customer-local-latam.ebanx.com/img/uber/tip-copy-paste.svg" alt="copy paste icon" class="tips-box__TipIcon">
+				<div class="tips-box__TipText">Cole o código Pix em seu app bancário ou carteira digital de preferência e confirme o pagamento.</div>
+			</div>
+			<div class="tips-box__Tip">
+				<img src="https://customer-local-latam.ebanx.com/img/uber/tip-smartphone-confirmation.svg" alt="phone confirmation icon" class="tips-box__TipIcon-sc-1h623wb-1 hIhprV">
+				<div class="tips-box__TipText">Seu pagamento será aprovado em alguns instantes.</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../s3-sa-east-1.amazonaws.com/assets.ebanx.com/gateway/commons/js/clipboard.min.js"></script>
+	<script src="https://customer-local-latam.ebanx.com/js/uber/voucher.js"></script>
+	<script type="text/javascript">
+		(function () {
+			const getPaymentStatus = async function () {
+				const response = await fetch("checkout72d3.html\/\/customer-local-latam.ebanx.com\/pix\/checkout\/getPaymentStatus?hash=67267bbd00c4d96020ab50ebe9bffc3d287e542413194763");
+				if (!response.ok) {
+					return null;
+				}
+				return await response.json();
+			};
+
+			const checkPaymentStatus = async function () {
+				let result;
+				try {
+					result = await getPaymentStatus();
+				} catch (error) {
+					console.error(error);
+					result = null;
+				}
+				if (result && !result.isPending) {
+					window.location.reload();
+				} else {
+					setTimeout(checkPaymentStatus, 1000);
+				}
+			};
+			checkPaymentStatus();
+		})();
+
+	</script>
+	</main>
+
+	<footer class="page__Footer">
+		<div value="2em 1em" class="margin__FooterMargin">
+			<p>Pagamento seguro via<img src="../../cdn-email.ebanx.com/images/ebanx-new-logo-blue.png" alt="EBANX" class="page__EbanxLogo"></p>
+			<div value=".5em calc(50% - 6em)" class="padding__FooterPadding">
+				<div pattern="solid" class="separator__Line"></div>
+			</div><p>Parceiro oficial da Uber</p>
+		</div>
+	</footer>
+</article>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8dc68845ce1f4d29","version":"2024.10.4","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"81db12904d0e4a4bb7c6ad8ad3a01cd4","b":1}' crossorigin="anonymous"></script>
